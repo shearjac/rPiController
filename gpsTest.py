@@ -10,5 +10,7 @@ for new_data in gps_socket:
     if new_data:
         cls()
         data_stream.unpack(new_data)
-        print('Altitud'+"\t\t\t"+'= ', data_stream.TPV['alt'])
+        print('Altitude'+"\t\t\t"+'= ', data_stream.TPV['alt'])
         print('Speed'+"\t\t\t"+'= ', data_stream.TPV['speed'])
+        print('Latitude'+"\t\t\t"+'= ', data_stream.TPV['lat'])
+        print('Longitude'+"\t\t\t"+'= ', data_stream.TPV['lon'])

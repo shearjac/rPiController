@@ -12,7 +12,10 @@ connection = obd.OBD()
 
 #All commands to be grabbed from the vehicle
 commandList = [obd.commands.RPM,
-               obd.commands.RUN_TIME]
+               obd.commands.RUN_TIME,
+               obd.commands.SPEED,
+               obd.commands.FUEL_LEVEL,
+               obd.commands.GET_DTC]
 
 #Go through the base command list to make sure all are supported
 for cmd in commandList:
